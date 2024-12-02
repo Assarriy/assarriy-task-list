@@ -49,7 +49,7 @@
                 </tbody>
             </table>
 
-            {{ $tasks->links() }} <!-- Pagination links -->
+            {{ $tasks->links() }}
         </div>
     </div>
 </div>
