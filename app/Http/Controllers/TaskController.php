@@ -7,11 +7,9 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        $search = $request->input('search');
-        $tasks = Task::where('title', 'like', "%$search%")->paginate(5);
-        return view('tasks.index', compact('tasks', 'search'));
+        return view('tasks.index');
     }
 
     public function create()
